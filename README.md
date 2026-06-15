@@ -1,18 +1,33 @@
-# Rackdog Tap
+# Rackdog Homebrew Tap
 
-## How do I install these formulae?
+Official Homebrew tap for [Rackdog](https://rackdog.com) tools.
 
-`brew install rackdog/tap/<formula>`
+## Install dogctl
 
-Or `brew tap rackdog/tap` and then `brew install <formula>`.
+```bash
+brew install rackdog/tap/dogctl
+```
 
-Or, in a `brew bundle` `Brewfile`:
+Or tap first and install separately:
+
+```bash
+brew tap rackdog/tap
+brew install dogctl
+```
+
+## Usage in a Brewfile
 
 ```ruby
 tap "rackdog/tap"
-brew "<formula>"
+cask "dogctl"
+```
+
+## Updating
+
+```bash
+brew update && brew upgrade dogctl
 ```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Full command reference: ***TO BE ADDED, MINTLIFY DOCS***
